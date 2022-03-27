@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <title>HARI</title>
+    <script type="text/JavaScript">
+        function show_hari(){
+            var namaHari = new Array("Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggi");
+
+            var namaBulan = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+
+            var sekarang = new Date();
+            var HariIni = namaHari[sekarang.getDay()];
+            var BulanIni = namaBulan[sekarang.getMonth()];
+            var tgl = sekarang.getDate();
+            var tahun = sekarang.getFullYear();
+            document.write(HariIni + ", " + tgl + " " + BulanIni + " " + tahun);
+        }
+    </script>
+</head>
+<body>
+	<p>Sekarang hari</p>
+    <h2><script>show_hari();</script>.</h2>
+</body>
+</html>

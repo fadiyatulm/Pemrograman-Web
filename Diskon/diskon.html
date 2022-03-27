@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <title>DISKON</title>
+</head>
+<body>
+    <main>
+        <h1>DISKON</h1>
+        <div class="container">
+            <Form name="form">
+                <p>
+                Harga (Rp)<br>
+                <input type="text" name="harga" class="input">
+                </p>
+                <br>Diskon(%)<br>
+                <input type="text" name="diskon" class="input">
+                <br><br>
+    
+                <input type="button" name="cek" value="CEK" class="button" onclick="hitungDiskon()">
+                <br><br>
+                
+                Harga setelah didiskon (Rp) <br> 
+                <input type="text" name="hasil" class="input">
+            </Form>
+        </div>
+        
+        <script language="JavaScript" type="text/JavaScript">
+            function hitungDiskon(){
+                var harga = document.form.harga.value;
+                var diskon = document.form.diskon.value;
+
+                harga = parseFloat(harga);
+                diskon = parseFloat(diskon);
+
+                var hasil = harga * (diskon/100);
+                hasil = harga - parseFloat(hasil);
+
+                document.form.hasil.value = hasil;
+            }
+        </script>
+    </main>    
+</body>
+</html>

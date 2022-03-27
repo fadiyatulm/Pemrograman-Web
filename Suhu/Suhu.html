@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <title>KONVERSI SUHU</title>
+    <script language="JavaScript" type="text/JavaScript">
+        function hitung(){
+            var bil = parseFloat(document.form.bil.value);
+            var op = document.form.operasi.value;
+            var hasil;
+            if (op == "CR")
+                hasil = bil * 0.8;
+            else if (op == "CF")
+                hasil = (bil * 1.8) + 32;
+            else if (op == "CK")
+                hasil = bil + 273;
+            else if (op == "RC")
+                hasil = bil * 1.25;
+            else if (op == "RF")
+                hasil = (bil * 2.25) + 32;
+            else if (op == "RK")
+                hasil = (bil * 1.25) + 273;  
+            else if (op == "FC")
+                hasil = (bil - 32) / 1.8;
+            else if (op == "FR")
+                hasil = (bil - 32) / 0.8;
+            else if (op == "FK")
+                hasil = (bil - 32) + 273;        
+            else if (op == "KC")
+                hasil = bil - 273;
+            else if (op == "KR")
+                hasil = (bil - 273) * 0.8;
+            else if (op == "KF")
+                hasil = ((bil - 273) * 1.8) + 32;      
+            document.form.hasil.value = hasil;
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Konverter Suhu</h1>
+        <div class="container">
+            <form name="form">
+                Suhu <br> <input type="text" name="bil" class="input">
+        
+                <br><br>
+                <select name="operasi" class="button" onchange="hitung()">
+                    <optgroup label="Celsius">
+                        <option value="CR">Celsius-Reamur</option>
+                        <option value="CF">Celsius-Farenheit</option>
+                        <option value="CK">Celsius-Kelvin</option>
+                    </optgroup>
+                    <optgroup label="Reamur">
+                        <option value="RC">Reamur-Celsius</option>
+                        <option value="RF">Reamur-Farenheit</option>
+                        <option value="RK">Reamur-Kelvin</option>
+                    </optgroup>
+                    <optgroup label="Farenheit">
+                        <option value="FC">Farenheit-Celsius</option>
+                        <option value="FR">Farenheit-Reamur</option>
+                        <option value="FK">Farenheit-Kelvin</option>
+                    </optgroup>
+                    <optgroup label="Kelvin">
+                        <option value="KC">Kelvin-Celsius</option>
+                        <option value="KR">Kelvin-Reamur</option>
+                        <option value="KF">Kelvin-Farenheit</option>
+                    </optgroup>
+                </select>
+                <br><br>
+        
+                Hasil <br> <input type="text" name="hasil" class="input">
+            </form>
+        </div>    
+    </main>
+    
+</body>
+</html>

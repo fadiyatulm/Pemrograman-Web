@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css.css">
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+    <title>KONVERSI NILAI</title>
+</head>
+<body>
+    <main>
+        <h1>NILAI</h1>
+
+        <div class="container">
+            <form name="form">
+                Nilai <br>
+                <input type="text" name="nilai" class="input">
+                <br><br>
+                <input type="button" name="cek" value="SUBMIT" class="button" onclick="konNilai();">
+                <br><br>
+                Status nilai <br> <input type="text" name="status" class="input">
+            </form>
+        </div>
+       
+    <script type="text/JavaScript">
+        function konNilai(){
+            var bil = document.form.nilai.value;
+            var status = document.form.status.value;
+            if(bil <= 100 && bil >= 80){
+                status = "Nilai Anda A";
+            }else if(bil <= 79 && bil >= 70){
+                status = "Nilai Anda B";
+            }else if(bil <= 69 && bil >= 60){
+                status = "Nilai Anda C";
+            }else if(bil <= 59 && bil >= 50){
+                status = "Nilai Anda D";
+            }else if(bil <= 49 && bil >= 0){
+                status = "Nilai Anda E";
+            }else{
+                status = "Nilai yang Anda masukkan salah";
+            }
+            document.form.status.value = status;
+        }
+    </script>
+    </main>
+    
+</body>
+</html>
