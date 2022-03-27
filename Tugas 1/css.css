@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	display: block;
+	background-color: #000000;
+}
+
+.container{
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.logo h1{
+	color: #cfe2f3;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: Fredoka;
+	font-size: 30px;
+}
+
+.menu{
+	float: right;
+	height: 100%;
+}
+
+.menu a{
+	height: 100%;
+	float: left;
+	display: table;
+	padding: 0px 20px;
+}
+
+.menu a li{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: #ffffff;
+	font-family: Fredoka;
+	font-size: 15px;
+}
+
+a:hover {
+  background-color: #cfe2f3;
+}
+
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	background-color: black;
+}
+
+.footext{
+	padding-top: 7px;
+	color: #cfe2f3;
+	text-align: center;
+	font-family: Fredoka;
+	font-size: 11px;
+}
+
+.row{
+	width: 1200px;
+	padding-left: 90px;
+	padding-top: 60px;
+}
+
+.column1 {
+  float: left;
+  width: 360px;
+  padding-right: 40px;
+}
+
+.column1 h2{
+  font-family: Fredoka;
+  text-align: center;
+  padding-top: 17px;
+  color: #000000;
+}
+
+.column1 h2:hover{
+	color: #cfe2f3;
+}
+
+.column1 p{
+  font-family: Fredoka;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.column1 img{
+	align-items: center;
+	padding-left: 10px;
+}
+
+.column2{
+  float: left;
+  width: 360px;
+  padding-right: 40px;
+}
+
+.column2 h2{
+  font-family: Fredoka;
+  text-align: center;
+  padding-top: 5px;
+  color: #000000;
+}
+
+.column2 h2:hover{
+	color: #cfe2f3;
+}
+
+.column2 p{
+  font-family: Fredoka;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.column2 img{
+	align-items: center;
+	padding-left: 17px;
+}
+
+.column3{
+  float: left;
+  width: 360px;
+  padding-right: 40px;
+}
+
+.column3 h2{
+  font-family: Fredoka;
+  text-align: center;
+  padding-top: 20px;
+  color: #000000;
+}
+
+.column3 h2:hover{
+	color: #cfe2f3;
+}
+
+.column3 p{
+  font-family: Fredoka;
+  text-align: center;
+  padding-top: 17px;
+}
+
+.column3 img{
+	align-items: center;
+	padding-left: 10px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

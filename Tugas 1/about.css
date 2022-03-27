@@ -1,0 +1,102 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.header{
+	width: 100%;
+	height: 60px;
+	display: block;
+	background-color: #000000;
+}
+
+.container{
+	width: 90%;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.logo{
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.logo h1{
+	color: #cfe2f3;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: Fredoka;
+	font-size: 30px;
+}
+
+.menu{
+	float: right;
+	height: 100%;
+}
+
+.menu a{
+	height: 100%;
+	float: left;
+	display: table;
+	padding: 0px 20px;
+}
+
+.menu a li{
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: #ffffff;
+	font-family: Fredoka;
+	font-size: 15px;
+}
+
+.menu a:hover {
+  background-color: #cfe2f3;
+}
+
+img{
+	border-radius: 50%;
+}
+
+.txt{
+	width: 50%;
+	margin: auto;
+	padding: 10px;
+}
+
+.txt p{
+	text-align: center;
+	padding-top: 15px;
+	font-size: 20px;
+	font-family: Fredoka;
+}
+
+.icon{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70px;
+}
+
+.footer{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 35px;
+	background-color: black;
+}
+
+.footext{
+	padding-top: 7px;
+	color: #cfe2f3;
+	text-align: center;
+	font-family: Fredoka;
+	font-size: 11px;
+}
+
